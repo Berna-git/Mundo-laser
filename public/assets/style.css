@@ -1,0 +1,116 @@
+/* ===Font family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/* ====== Variables ======= */
+:root {
+    --hedear-height: 7rem;
+}
+:root {
+    --secondary-color: #520000;  
+    --main-color:#eea243;
+    --terceary-color:#B05430;
+}
+/*=== styles por defecto=== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ===== Hedear ==== */
+.hedear-l {
+    height: var(--hedear-height);
+    box-shadow: 0 1px 4px rgba(146,161,176,.15);
+    border-radius: 5px;
+
+}
+
+.nav_side-bars{
+    display: flex;
+    justify-content: space-between;    
+}
+.nav__toggle i {
+    font-size: 3rem;
+    padding: 10px;
+    margin: 5px 10px 0px 0px;
+    color: var(--main-color);
+}
+.hedear-img_logo {
+    border-radius: 120px;
+    width: 70px;
+    height:70px;
+    padding: 10px;
+}  
+.nav__toggle {
+    display: none;
+}
+.nav-menu {
+    margin-right: 40px;
+    display: flex;
+    align-items: center
+}
+.nav-menu__list {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.nav-menu__list li a {
+    color: var(--main-color);
+    font-size: 1.9rem;
+    font-weight: 600;
+}
+/* ====Side bar ======== */
+@media(max-width: 800px) {
+    .nav__toggle {
+        display: initial;    
+    }
+    .nav-menu {
+        position: fixed;
+        width: 40%;
+        height: 100vh;
+        top: var(--hedear-height);
+        background-color: var(--main-color);
+        transition: 2s;
+        margin: 0;
+        display: block;
+    }
+    
+    .show_menu {
+        right: 0;
+    }
+    .hide_menu {
+        right: -40%;
+    }
+    
+    .nav-menu__list {
+        height: 35%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: auto;
+    }
+    .nav-menu__list li a {
+        color: white;
+        font-size: 1.6rem;
+    }    
+}
+
+
