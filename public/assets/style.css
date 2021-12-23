@@ -62,7 +62,8 @@ a {
 .nav-menu {
     margin-right: 40px;
     display: flex;
-    align-items: center
+    align-items: center;
+    z-index: 100;
 }
 .nav-menu__list {
     display: flex;
@@ -114,3 +115,149 @@ a {
 }
 
 
+/* ====== Nosotros ======== */ 
+.section-nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub-title {
+    font-size: 2.2rem;
+    color: var(--terceary-color);
+    margin-top: 20px;
+    text-align: center;    
+}
+
+.section-nosotros_info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section-nosotros_info p {
+    text-align: center;
+    padding:  0 40px 0 40px;
+    margin: 20px 0 20px 0;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.section-nosotros_info img {
+    max-width: 300px;
+    pad: 10px;
+}
+
+/* ==== Trabajos ========== */
+
+.section-trabajos {
+    width: 100%;
+}
+.sub-title-trabajo {
+    margin: 40px 0 20px 0;
+}
+/* ===== Section Swiper==== */
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    
+/* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 50%;
+    object-fit: cover;
+    padding: 40px;
+    
+}
+
+/* ====== Section service ======= */
+
+.sub-title-servicios { 
+    font-size: 2.2rem;
+    color: var(--terceary-color);
+    text-align: center;   
+    margin: -50px 0 30px 0 ;
+}
+
+.container-service-info {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 25px auto 25px;
+    gap: 10px;
+    height: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.item-service {
+    grid-column: 2 / 3;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    min-width: 250px;
+    display: grid;
+    color: white;
+    grid-template-columns: 30% auto;
+    align-items: center;
+}
+.item-service h3 , .item-service i {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 10px;
+}
+.item-service i {
+    font-size: 3rem;
+    margin: 0 auto;
+}
+
+/* ========= Section Conctacto ========== */
+
+/* ========= Footer ============ */
+
+.footer{
+    background-color: #C36A2D;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem ;
+    margin-top: 30px;
+}
+.footer__title{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+}
+.footer__social{
+    margin: 10px 0 10px 0;
+}
+.footer__icon{
+    font-size: 2.5rem;
+    color: #fff;
+    margin: 0px 20px;
+}
+.footer__icon i {
+    font-size: 2.2rem;
+    font-weight: 600;
+} 
+
+body > main > footer > p:nth-child(3) {
+    color: #fff;
+    font-size: 1.2rem;
+}

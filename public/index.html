@@ -4,7 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ====Box Icon -->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    
     <link rel="stylesheet" href="./assets/style.css">
     <title>Mundo Laser</title>
 </head>
@@ -20,14 +27,116 @@
                 
                 <div class="nav-menu show_menu" id="side-bar">
                     <ul class="nav-menu__list">
-                        <li><a class="item-a" href="#">Nosotros</a></li>
-                        <li><a class="item-a" href="#">Trabajos</a></li>    
-                        <li><a class="item-a" href="#">Servicios</a></li>                    
-                        <li><a class="item-a" href="#">Contactanos</a></li>         
+                        <li><a class="item-a" href="#Nosotros">Nosotros</a></li>
+                        <li><a class="item-a" href="#Trabajo">Trabajos</a></li>    
+                        <li><a class="item-a" href="#Servicio">Servicios</a></li>                    
+                        <li><a class="item-a" href="#Contactanos">Contactanos</a></li>         
                     </ul>
                 </div>     
         </nav>
     </header>
+    <main>
+        <section class="section-nosotros" id="Nosotros" >
+            <h2 class="sub-title">Nosotros</h2>
+            <div class="section-nosotros_info">
+                <p>Somos mundo Láser una empresa responsable que se dedica al corte y grabado de producto, totalmente personalizado atraves del uso de láser (CNC de 40w)
+                    Somos de Minas Lavalleja hacemos envío a todo el país por la agencia de tu preferencia
+                    Contamos con una amplia forma de pago</p>
+                <img src="./assets/img/img-Laser2.jpg" alt="">
+            </div>
+        </section>
+
+        <!-- === Section Trabajos Presentacion ===-->
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <h2 class="sub-title sub-title-trabajo">Trabajos</h2>
+                
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="./assets/img/Swiper1.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper2.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper3.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper4.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper5.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper6.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper7.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper8.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper9.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper10.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper11.jpeg" alt=""></div>
+                  <div class="swiper-slide"><img src="./assets/img/Swiper12.jpeg" alt=""></div>
+
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- <div class="swiper-pagination"></div> -->
+              </div>
+  
+        <section class="section-servicios">
+            <h2 class="sub-title-servicios">Servicios</h2>
+            <div class="container-service-info">
+                <div class="item-service">
+                    <i class='bx bxs-edit-alt'></i>
+                    <h3>Trabajos Personalizados</h3>
+                </div>
+                <div class="item-service">
+                    <i class='bx bxs-truck'></i>
+                    <h3>Envios A Todo El Pais</h3>
+                </div>
+                <div class="item-service">
+                    <i class='bx bxs-dollar-circle' ></i>
+                    <h3>Diversas Formas De Pago</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-contacto">
+           
+            <h2 class="sub-title sub-title-contacto" id="Contactanos">Contactanos</h2>
+           
+            <div class="container-service-info">
+                <div class="item-service">
+                    <i class='bx bxl-instagram'></i>        
+                    <a href="https://www.instagram.com/mundolaseruy/">mundolaseruy</a> 
+                </div>
+                <div class="item-service">
+                    <i class='bx bxl-facebook-circle'></i>
+                    <a href="https://www.facebook.com/Mundo-L%C3%A1ser-110623174747897  ">Mundo Láser</a>
+                </div>
+                <div class="item-service">
+                    <i class='bx bxl-whatsapp'></i>
+                    <h3>095 310 994 </h3>
+                </div>
+           
+            </div>
+        </section>
+        <footer class="footer">
+            <p class="footer__title">Mundo Laser</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/Mundo-L%C3%A1ser-110623174747897  " class="footer__icon"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.instagram.com/mundolaseruy/" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="./assets/gmail.html" class="footer__icon"><i class='bx bxl-gmail'></i></a>
+            </div>
+            <p>&#169; 2021 BG
+            </p>
+        </footer>
+    </main>
+
+    
     <script src="./assets/js/main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
 </body>
 </html>
