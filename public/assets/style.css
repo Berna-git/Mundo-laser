@@ -16,12 +16,11 @@
     margin: 0;
     padding: 0;
     font-size: 10px;
-
 }
 
 html {
     font-family: 'Poppins', sans-serif;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
 }
 
 li {
@@ -114,7 +113,6 @@ a {
     }    
 }
 
-
 /* ====== Nosotros ======== */ 
 .section-nosotros {
     display: flex;
@@ -206,6 +204,7 @@ a {
     height: 100%;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 40px;
 
 }
 .item-service {
@@ -229,7 +228,25 @@ a {
 }
 
 /* ========= Section Conctacto ========== */
+.item-service a {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.item-contact:hover {
+    transform: scale(1.1);
+}
 
+.item-contact {
+    background-color: white;
+    color: var(--main-color);
+}
+.item-contact a {
+    color: var(--main-color);
+}
+.item-contact h3 {
+    font-size: 2rem;
+}
 /* ========= Footer ============ */
 
 .footer{
@@ -260,4 +277,37 @@ a {
 body > main > footer > p:nth-child(3) {
     color: #fff;
     font-size: 1.2rem;
+}
+
+/* === Media Queris == */
+
+@media (min-width: 800px) {
+    .section-nosotros_info {
+        flex-direction: row;
+        padding: 0 30px;
+    }
+    .section-nosotros_info img {
+        margin-right: 50px;
+    }
+
+    .container-service-info {
+        margin-bottom: 70px;
+    }
+}
+@media (min-width: 500px) {
+    .sub-title-servicios {
+        margin: -100px 0 30px 0;
+    }
+    .container-service-info {
+        margin-bottom: 50px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section-nosotros_info {
+        padding: 0 100px;
+    }
+    .container-service-info {
+        margin-bottom: 100px;
+    }
 }
