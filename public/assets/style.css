@@ -48,6 +48,11 @@ a {
     padding: 10px;
     margin: 5px 10px 0px 0px;
     color: var(--main-color);
+    cursor: pointer;
+
+}
+.nav__toggle i:hover {
+    transform: scale(1.2);
 }
 .hedear-img_logo {
     border-radius: 120px;
@@ -64,6 +69,7 @@ a {
     align-items: center;
     z-index: 100;
 }
+
 .nav-menu__list {
     display: flex;
     justify-content:space-between;
@@ -75,6 +81,9 @@ a {
     color: var(--main-color);
     font-size: 1.9rem;
     font-weight: 600;
+}
+.nav-menu__list li:hover {
+    transform: scale(1.2);
 }
 /* ====Side bar ======== */
 @media(max-width: 800px) {
@@ -280,8 +289,22 @@ body > main > footer > p:nth-child(3) {
 }
 
 /* === Media Queris == */
+@media (min-width: 500px) {
+    .sub-title-servicios {
+        margin: -100px 0 30px 0;
+    }
+    .container-service-info {
+        margin-bottom: 50px;
+    }
+    .item-service {
+        width: 380px;
+    }
+
+}
 
 @media (min-width: 800px) {
+    
+    
     .section-nosotros_info {
         flex-direction: row;
         padding: 0 30px;
@@ -294,14 +317,7 @@ body > main > footer > p:nth-child(3) {
         margin-bottom: 70px;
     }
 }
-@media (min-width: 500px) {
-    .sub-title-servicios {
-        margin: -100px 0 30px 0;
-    }
-    .container-service-info {
-        margin-bottom: 50px;
-    }
-}
+
 
 @media (min-width: 1000px) {
     .section-nosotros_info {

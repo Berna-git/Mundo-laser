@@ -25,3 +25,14 @@ function mostrarSidebar() {
     }
 }
 mostrarSidebar()
+
+
+window.onscroll = function (){
+    // Obtenemos la posicion del scroll en pantalla
+    var scroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+    // Cambio el pocisionamiento del nav si el scroll es mayor a 1
+    scroll > 1 ? navMenu.style.top = '0px' : navMenu.style.top = '7rem' 
+    
+
+}
